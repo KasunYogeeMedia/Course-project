@@ -72,15 +72,21 @@ body {
     background-color: #EFF3FF;
 }
 
-.single-content .right-content .content .form {
+.single-content .right-content .content .formRegister {
     background-color: #fff;
     border-radius: 10px;
     display: none;
 }
 
-.single-content .right-content .content .form label {
+.single-content .right-content .content .formRegister label {
     margin-bottom: 0;
     margin-top: 20px;
+}
+.single-content .right-content .tabcontent {
+    display: none;
+}
+.single-content .right-content .active {
+    display: block;
 }
 
 /* single course page styles*/

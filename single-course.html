@@ -55,34 +55,58 @@
             <div class="col-md-3">
                 <div class="left-content mb-4">
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
-                        <li class="list-group-item"><a href="">Sample</a></li>
+                        <li class="list-group-item">
+                            <button class="tablinks" onclick="openCourse(event, 'course001')">course 1</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="tablinks" onclick="openCourse(event, 'course002')">course 2</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="tablinks" onclick="openCourse(event, 'course003')">course 3</button>
+                        </li>
+
                     </ul>
                 </div>
             </div>
             <div class="col-md-9">
                 <div class="right-content">
-                    <h1>Nothelferkurse in Bern</h1>
-                    <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-                        Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
-                        ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+
+                    <div class="tabcontent active" id="course001">
+                        <h1>First element</h1>
+                        <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.</span>
+                            Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
+                            ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+                    </div>
+                    <div class="tabcontent" id="course002">
+                        <h1>Second element</h1>
+                        <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.</span>
+                            Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
+                            ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+                    </div>
+                    <div class="tabcontent" id="course003">
+                        <h1>Third element</h1>
+                        <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.</span>
+                            Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
+                            ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+                    </div>
                     <div class="border border-dark rounded">
                         <div class="content m-2 p-4">
-                            <p> <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus
+                            <p> <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+                                    necessitatibus
                                     error porro, voluptates ipsam quisquam qui consequuntur earum iste obcaecati
-                                    molestias eum temporibus autem perferendis sint laboriosam dolore odit modi!</small>
+                                    molestias eum temporibus autem perferendis sint laboriosam dolore odit
+                                    modi!</small>
                             </p>
-                            <a type="button" onclick="showform()" class="register-btn btn btn-primary mb-4">Register
+                            <a type="button" onclick="showform()"
+                                class="register-btn btn btn-primary mb-4">Register
                                 form</a>
 
-                            <div id="form" class="form px-3 pb-3">
+                            <div id="formRegister" class="formRegister px-3 pb-3">
                                 <form action="">
+                                    <input type="text" id="courseId"/>
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
                                             <label for="gender" class="col-form-label-sm">salutation</label>
@@ -132,7 +156,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <label for="phoneNo" class="col-form-label-sm">Mobile phone number.</label>
+                                            <label for="phoneNo" class="col-form-label-sm">Mobile phone
+                                                number.</label>
                                             <input type="text" name="phoneNo" id="phoneNo" class="form-control">
                                         </div>
                                         <div class="col-md-6 col-sm-12">
