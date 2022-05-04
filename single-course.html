@@ -53,10 +53,15 @@
     <div class="single-content container my-5">
         <div class="row">
             <div class="col-md-3">
-                <div class="left-content">
+                <div class="left-content mb-4">
                     <ul class="list-group">
                         <li class="list-group-item">Cras justo odio</li>
                         <li class="list-group-item active">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
                         <li class="list-group-item">Morbi leo risus</li>
                         <li class="list-group-item">Porta ac consectetur ac</li>
                         <li class="list-group-item">Vestibulum at eros</li>
@@ -75,71 +80,76 @@
                                     error porro, voluptates ipsam quisquam qui consequuntur earum iste obcaecati
                                     molestias eum temporibus autem perferendis sint laboriosam dolore odit modi!</small>
                             </p>
-                            <a type="button" onclick="showform()" class="register-btn btn btn-primary mb-4" href="">Register form</a>
-                            
+                            <a type="button" onclick="showform()" class="register-btn btn btn-primary mb-4">Register
+                                form</a>
+
                             <div id="form" class="form px-3 pb-3">
-                                <form>
+                                <form action="">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
-                                            <label for="exampleFormControlSelect1"
-                                                class="col-form-label-sm">salutation</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>Mr.</option>
-                                                <option>women</option>
+                                            <label for="gender" class="col-form-label-sm">salutation</label>
+                                            <select class="form-control" name="gender" id="gender">
+                                                <option>Mr</option>
+                                                <option>Mrs</option>
+                                                <option>Miss</option>
+                                                <option>Rev</option>
                                             </select>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label for="" class="col-form-label-sm">First name</label>
-                                            <input type="text" class="form-control">
+                                            <label for="fName" class="col-form-label-sm">First name</label>
+                                            <input type="text" name="fName" id="fName" class="form-control">
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label for="" class="col-form-label-sm">Last name</label>
-                                            <input type="text" class="form-control" placeholder="Last name">
+                                            <label for="lName" class="col-form-label-sm">Last name</label>
+                                            <input type="text" name="lName" id="lName" class="form-control"
+                                                placeholder="Last name">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <label for="" class="col-form-label-sm">Street, No.</label>
-                                            <input type="text" class="form-control">
+                                            <label for="stNo" class="col-form-label-sm">Street, No.</label>
+                                            <input type="text" name="stNo" id="stNo" class="form-control">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <label for="" class="col-form-label-sm">location</label>
-                                            <input type="text" class="form-control">
+                                            <label for="location" class="col-form-label-sm">location</label>
+                                            <input type="text" name="location" id="location" class="form-control">
                                         </div>
                                         <div class="col-md-6 col-sm-12">
-                                            <label for="" class="col-form-label-sm">Postcode</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <label for="" class="col-form-label-sm">e-mail</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <label for="" class="col-form-label-sm">Confirm email address</label>
-                                            <input type="text" class="form-control">
+                                            <label for="postcode" class="col-form-label-sm">Postcode</label>
+                                            <input type="text" name="postcode" id="postcode" class="form-control">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <label for="" class="col-form-label-sm">Mobile phone number.</label>
-                                            <input type="text" class="form-control">
+                                            <label for="email" class="col-form-label-sm">e-mail</label>
+                                            <input type="text" name="email" id="email" class="form-control">
                                         </div>
                                         <div class="col-md-6 col-sm-12">
-                                            <label for="" class="col-form-label-sm">Date of birth</label>
-                                            <input type="date" id="birthday" class="form-control" name="birthday">
+                                            <label for="confEmail" class="col-form-label-sm">Confirm email
+                                                address</label>
+                                            <input type="text" name="confEmail" id="confEmail" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="phoneNo" class="col-form-label-sm">Mobile phone number.</label>
+                                            <input type="text" name="phoneNo" id="phoneNo" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="dob" class="col-form-label-sm">Date of birth</label>
+                                            <input type="date" id="dob" name="dob" class="form-control">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <label for="" class="col-form-label-sm">comment</label>
-                                            <input type="text" class="form-control">
+                                            <label for="comment" class="col-form-label-sm">Comment</label>
+                                            <input type="text" name="comment" id="comment" class="form-control">
                                         </div>
                                     </div>
-                                    <p class="mt-4"><small>With your registration you accept the <a href="terms.html">general terms and conditions</a></small></p>
+                                    <p class="mt-4"><small>With your registration you accept the <a
+                                                href="terms.html">general terms and conditions</a></small></p>
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
                             </div>

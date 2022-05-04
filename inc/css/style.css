@@ -59,7 +59,14 @@ body {
 /* courses page styles*/
 
 /* single course page styles*/
-.single-content .left-content {}
+.single-content .left-content {
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.single-content .right-content .register-btn {
+    color: white;
+}
 
 .single-content .right-content .content {
     background-color: #EFF3FF;
@@ -68,6 +75,7 @@ body {
 .single-content .right-content .content .form {
     background-color: #fff;
     border-radius: 10px;
+    display: none;
 }
 
 .single-content .right-content .content .form label {
