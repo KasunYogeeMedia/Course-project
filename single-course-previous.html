@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--  font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="inc/css/style.css">
+    <link rel="stylesheet" href="inc/css/responsive.css">
+    <title>Courses</title>
+</head>
+
+<body>
+    <!-- header section start-->
+    <div id="header" class="header">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+            <a class="navbar-brand" href="#">
+                <img src="inc/img/logo-V5.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">OFFER COURSE<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="course.html">SHOW COURSE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </div>
+    <!-- header section end-->
+
+    <!-- Body section start -->
+    <div class="single-content container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="left-content mb-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <button class="tablinks" onclick="openCourse(event, 'course001')">course 1</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="tablinks" onclick="openCourse(event, 'course002')">course 2</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="tablinks" onclick="openCourse(event, 'course003')">course 3</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="right-content">
+
+                    <div class="tabcontent active" id="course001">
+                        <h1>First element</h1>
+                        <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.</span>
+                            Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
+                            ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+                    </div>
+                    <div class="tabcontent" id="course002">
+                        <h1>Second element</h1>
+                        <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.</span>
+                            Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
+                            ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+                    </div>
+                    <div class="tabcontent" id="course003">
+                        <h1>Third element</h1>
+                        <p> <span class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.</span>
+                            Quaerat, dolorem alias? Obcaecati minus deserunt nemo, ut quis, ipsam natus animi cupiditate
+                            ratione esse, saepe porro maiores recusandae magnam velit doloremque.</p>
+                    </div>
+                    <div class="border border-dark rounded">
+                        <div class="content m-2 p-4">
+                            <p> <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+                                    necessitatibus
+                                    error porro, voluptates ipsam quisquam qui consequuntur earum iste obcaecati
+                                    molestias eum temporibus autem perferendis sint laboriosam dolore odit
+                                    modi!</small>
+                            </p>
+                            <a type="button" onclick="showform()" class="register-btn btn btn-primary mb-4">Register
+                                form</a>
+
+                            <div id="formRegister" class="formRegister px-3 pb-3">
+                                <form action="">
+                                    <input type="text" id="courseId" />
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="gender" class="col-form-label-sm">salutation</label>
+                                            <select class="form-control" name="gender" id="gender">
+                                                <option>Mr</option>
+                                                <option>Mrs</option>
+                                                <option>Miss</option>
+                                                <option>Rev</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="fName" class="col-form-label-sm">First name</label>
+                                            <input type="text" name="fName" id="fName" class="form-control">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="lName" class="col-form-label-sm">Last name</label>
+                                            <input type="text" name="lName" id="lName" class="form-control"
+                                                placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="stNo" class="col-form-label-sm">Street, No.</label>
+                                            <input type="text" name="stNo" id="stNo" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="location" class="col-form-label-sm">location</label>
+                                            <input type="text" name="location" id="location" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="postcode" class="col-form-label-sm">Postcode</label>
+                                            <input type="text" name="postcode" id="postcode" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="email" class="col-form-label-sm">e-mail</label>
+                                            <input type="text" name="email" id="email" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="confEmail" class="col-form-label-sm">Confirm email
+                                                address</label>
+                                            <input type="text" name="confEmail" id="confEmail" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="phoneNo" class="col-form-label-sm">Mobile phone
+                                                number.</label>
+                                            <input type="text" name="phoneNo" id="phoneNo" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="dob" class="col-form-label-sm">Date of birth</label>
+                                            <input type="date" id="dob" name="dob" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="comment" class="col-form-label-sm">Comment</label>
+                                            <input type="text" name="comment" id="comment" class="form-control">
+                                        </div>
+                                    </div>
+                                    <p class="mt-4"><small>With your registration you accept the <a
+                                                href="terms.html">general terms and conditions</a></small></p>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body section end -->
+    <!-- footer section start -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control"
+                                    placeholder="Email address" />
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" target="_blank" href="https://yogeemedia.com/">YogeeMedia.com</a> <a
+                href="terms.html"> Terms and conditions</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- footer section end -->
+
+    <!-- Custom JavaScript -->
+    <script src="inc/js/index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
