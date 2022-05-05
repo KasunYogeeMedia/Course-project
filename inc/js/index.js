@@ -1,21 +1,24 @@
 function showform(courseid) {
-    var x = 0;
-
-    if (courseid == 1) {
-        x = 1;
+    if (courseid == open001) {
         document.getElementById('formRegister001').style.display = "block";
     }
-
-    if (courseid == 2) {
-        x = 2;
+    if (courseid == open002) {
         document.getElementById('formRegister002').style.display = "block";
     }
-
-    if (courseid == 3) {
-        x = 3;
+    if (courseid == open003) {
         document.getElementById('formRegister003').style.display = "block";
     }
-
+}
+function closeform(courseid) {
+    if (courseid == close001) {
+        document.getElementById('formRegister001').style.display = "none";
+    }
+    if (courseid == close002) {
+        document.getElementById('formRegister002').style.display = "none";
+    }
+    if (courseid == close003) {
+        document.getElementById('formRegister003').style.display = "none";
+    }
 }
 
 function openCourse(evt, CourseName) {

@@ -64,7 +64,8 @@ body {
     overflow-x: scroll;
 }
 
-.single-content .right-content .register-btn {
+.single-content .right-content .register-btn,
+.single-content .right-content .close-reg {
     color: white;
 }
 
@@ -88,7 +89,9 @@ body {
 .single-content .right-content .active {
     display: block;
 }
-
+.single-content a.close-reg.btn.btn-danger{
+    float: right;
+}
 /* single course page styles*/
 
 /* terms page styles*/
